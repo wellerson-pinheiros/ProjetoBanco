@@ -1,9 +1,21 @@
 import readlinesync = require('readline-sync');
-
+import { Conta } from './src/model/Conta';
 
  export function main (){
 
     let opcao: number;
+
+
+    // CRIA NOVOS OBJETOS DA CLASSE CONTA
+    const c1 = new Conta(1,123,1,"Jonas",100000)
+    c1.visualizar();
+    console.log(c1.sacar(100.00));
+    c1.visualizar();
+
+    const c2 = new Conta(2,142,2,"Aline",100000)
+    c2.visualizar();
+    c2.depositar(100.00);
+    c2.visualizar()
 
     while (true) {
 

@@ -1,1 +1,4 @@
-while (true)
+;
+    c2.visualizar()
+
+    while (true) {
