@@ -1,5 +1,7 @@
 import readlinesync = require('readline-sync');
 import { Conta } from './src/model/Conta';
+import { ContaCorrent } from './src/model/ContaCorrente';
+import { contaPoupanca } from './src/model/ContaPoupança';
 
  export function main (){
 
@@ -9,13 +11,35 @@ import { Conta } from './src/model/Conta';
     // CRIA NOVOS OBJETOS DA CLASSE CONTA
     const c1 = new Conta(1,123,1,"Jonas",100000)
     c1.visualizar();
+
+    //sacar
     console.log(c1.sacar(100.00));
     c1.visualizar();
 
+    //depositar conta corrente
+
+    
+    
     const c2 = new Conta(2,142,2,"Aline",100000)
     c2.visualizar();
+
+    //depositar
     c2.depositar(100.00);
     c2.visualizar()
+
+    // Conta correntes
+    const cc1 = new ContaCorrent(3,789,1,"Andressa",100000,1000);
+    //sacando conta corrente
+
+    cc1.sacar(100500)
+    cc1.visualizar();
+
+    cc1.depositar(2000)
+    cc1.visualizar();
+
+    // CONTA POUPANÇA DEPOSITP
+    const cp2 = new contaPoupanca(351,452,2,"Wellerson",50000, 27 );
+    cp2.visualizar();
 
     while (true) {
 

@@ -86,6 +86,7 @@ export class Conta{
 
 
 
+
     public visualizar(){
 
         let tipo:string;
