@@ -1,4 +1,4 @@
-export class Conta{
+export abstract class Conta{
 
 
     // modelo de dados
